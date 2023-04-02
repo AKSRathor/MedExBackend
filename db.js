@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 // require('dotenv').config()
-const mongoURI = "mongodb://127.0.0.1:27017/Hackathon"
+require('dotenv').config()
+
+const mongoURI = process.env.MONGO_LAB|| "mongodb://127.0.0.1:27017/Hackathon" 
 
 
 const connectToMongoose =()=>{
